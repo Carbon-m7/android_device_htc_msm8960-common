@@ -50,6 +50,7 @@ PRODUCT_PACKAGES += \
     copybit.msm8960 \
     gralloc.msm8960 \
     hwcomposer.msm8960 \
+    memtrack.msm8960 \
     libgenlock \
     liboverlay
 
@@ -68,7 +69,8 @@ PRODUCT_PACKAGES += \
     libOmxAmrEnc \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
-    libstagefrighthw
+    libstagefrighthw \
+    libdashplayer
 
 # Power
 PRODUCT_PACKAGES += \
@@ -90,7 +92,9 @@ PRODUCT_PACKAGES += \
 
 # WPA supplicant config
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf
 
 # Media config
 PRODUCT_COPY_FILES += \
