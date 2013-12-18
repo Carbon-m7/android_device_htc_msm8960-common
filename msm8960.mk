@@ -119,6 +119,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true \
     persist.sys.ui.hw=true \
     persist.thermal.monitor=true \
+    ro.hwui.renderer.disable_opaque=true \
     ro.qc.sdk.audio.fluencetype=fluence \
     ro.use_data_netmgrd=true \
     wifi.interface=wlan0 \
